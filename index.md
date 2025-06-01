@@ -3,7 +3,7 @@ layout: page
 title: Champions League 2025 Rulebook
 ---
 
-# Champions League 2025 Rulebook ⚽
+# The Champions League - 2025 Rulebook 🏏
 
 Welcome to the official rulebook for the Champions League 2025 season. This document outlines key regulations, format, and guidelines for all participating teams and stakeholders.
 
@@ -11,7 +11,7 @@ Welcome to the official rulebook for the Champions League 2025 season. This docu
 
 ## 📘 Table of Contents
 
-1. [Competition Format](#competition-format)
+1. [Terms and conditions](#Terms-and-conditions)
 2. [Eligibility Criteria](#eligibility-criteria)
 3. [Match Regulations](#match-regulations)
 4. [Points System](#points-system)
@@ -23,11 +23,19 @@ Welcome to the official rulebook for the Champions League 2025 season. This docu
 
 ---
 
-## 🏆 Competition Format
+**A.TERMS AND CONDITIONS**
 
-- **Qualifying Rounds:** Multiple rounds to determine entry into the group stage.  
-- **Group Stage:** 8 groups of 4 teams each, round-robin format.  
-- **Knockout Stage:** Round of 16 → Quarter-finals → Semi-finals → Final.
+1. All ICC cricket rules will be followed unless mentioned otherwise in this document. The rules formulated by the FPL committee are final and changes can only be made by the committee.
+
+2. Any decisions made by the Umpire are final! The umpires have the right to throw out any player from the match if the behaviour is against the spirit of the game. In case of clarifications, only the captains of the respective teams are allowed to discuss to ensure smooth conversation.
+
+3. The participating teams and players are responsible for their own safety during the whole tournament. All the players participating in this event should wear minimum protective guards while batting or keeping the wickets. FPL-T10 organisers will not take responsibility for any minor or major injuries during the course of the play.
+
+4. The participating teams and players are responsible for their personal belongings during the whole tournament. FPL-T10 organisers are in no way responsible for this.
+
+5. At all times during the tournament you have to abide by the rules and regulations of the tournament.
+
+6. FPL-T10 Organising Committee (OC) expects the Captain or the team contact person to share this document with all the team members.
 
 ---
 
