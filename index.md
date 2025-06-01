@@ -24,18 +24,19 @@ Welcome to the official rulebook for the Champions League 2025 season. This docu
 ---
 
 **A.TERMS AND CONDITIONS**
+(The Champions league will be abbreviated as "TCL" from hereon)
 
-1. All ICC cricket rules will be followed unless mentioned otherwise in this document. The rules formulated by the FPL committee are final and changes can only be made by the committee.
+1. Unless specified otherwise in this document, all ICC cricket rules shall be followed. The rules and guidelines established by the TCL committee are considered final, and any modifications will be made solely at the committee’s discretion.
 
-2. Any decisions made by the Umpire are final! The umpires have the right to throw out any player from the match if the behaviour is against the spirit of the game. In case of clarifications, only the captains of the respective teams are allowed to discuss to ensure smooth conversation.
+2. The decisions made by the umpire(s) shall be considered final. Umpires are entrusted with upholding the spirit of the game and may ask a player to leave the match or ground in cases of inappropriate conduct. For any necessary clarifications, only the captains of the respective teams may approach the umpires to ensure smooth and respectful communication.
 
-3. The participating teams and players are responsible for their own safety during the whole tournament. All the players participating in this event should wear minimum protective guards while batting or keeping the wickets. FPL-T10 organisers will not take responsibility for any minor or major injuries during the course of the play.
+3. Participating teams and players are responsible for ensuring their own safety throughout the tournament. All players are required to wear appropriate protective gear while batting or wicketkeeping. Please note that TCL organisers cannot be held liable for any injuries, whether minor or major, sustained during the course of play.
 
-4. The participating teams and players are responsible for their personal belongings during the whole tournament. FPL-T10 organisers are in no way responsible for this.
+4. Participating teams and players are responsible for the safekeeping of their personal belongings throughout the tournament. The CPL organisers cannot be held responsible for any loss or damage to personal property.
 
-5. At all times during the tournament you have to abide by the rules and regulations of the tournament.
+5. All teams and players are required to adhere to the tournament’s rules and regulations at all times throughout the event.
 
-6. FPL-T10 Organising Committee (OC) expects the Captain or the team contact person to share this document with all the team members.
+6. The TCL Organising Committee (OC) expects the team captain or designated contact person to share this document or its link with all team members.
 
 ---
 
