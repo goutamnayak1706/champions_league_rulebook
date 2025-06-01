@@ -11,7 +11,7 @@ Welcome to the official rulebook for the Champions League 2025 season. This docu
 
 ## 📘 Table of Contents
 
-1. [Terms and conditions](#Terms-and-conditions)
+1. [Terms and conditions](#a-terms-and-conditions)
 2. [Eligibility Criteria](#eligibility-criteria)
 3. [Match Regulations](#match-regulations)
 4. [Points System](#points-system)
@@ -23,7 +23,7 @@ Welcome to the official rulebook for the Champions League 2025 season. This docu
 
 ---
 
-**A.TERMS AND CONDITIONS**
+## A. Terms and conditions
 (The Champions league will be abbreviated as "TCL" from hereon)
 
 1. Unless specified otherwise in this document, all ICC cricket rules shall be followed. The rules and guidelines established by the TCL committee are considered final, and any modifications will be made solely at the committee’s discretion.
