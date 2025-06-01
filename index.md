@@ -24,7 +24,7 @@ Welcome to the official rulebook for the Champions League 2025 season. This docu
 ---
 
 ## A. Terms and conditions
-(The Champions league will be abbreviated as "TCL" from hereon)
+> <span style="color: red;"><strong>Note:</strong> (The Champions league will be abbreviated as "TCL" from hereon)</span>
 
 1. Unless specified otherwise in this document, all ICC cricket rules shall be followed. The rules and guidelines established by the TCL committee are considered final, and any modifications will be made solely at the committee’s discretion.
 
