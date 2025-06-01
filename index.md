@@ -2,7 +2,6 @@
 layout: page
 title: Champions League 2025 Rulebook
 ---
-
 # Champions League-2025 Rulebook
 
 Welcome to the official rulebook for the Champions League 2025 season. This document outlines the key regulations, format, and guidelines for all participating teams and stakeholders.
