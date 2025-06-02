@@ -3,32 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <title>The Champions League 2025 Rulebook</title>
+  <!-- Google Fonts for modern look -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=900, initial-scale=1, maximum-scale=1">
   <style>
-    body { max-width: 800px; margin: 2em auto; font-family: sans-serif; line-height: 1.7; }
-    h1,h2,h3 { color: #052666; }
-    blockquote { background: #f6f8fa; border-left: 6px solid #e06c75; padding: 0.7em 1.5em; }
+    html {
+      background: #e3f4e0;
+      min-height: 100%;
+    }
+    body {
+      max-width: 900px;
+      margin: 2em auto;
+      font-family: 'Roboto', Arial, sans-serif;
+      line-height: 1.7;
+      background: linear-gradient(135deg, #e6ffe6 0%, #c7f5c4 100%);
+      box-shadow: 0 0 28px #bbb;
+      padding: 32px 24px;
+      border-radius: 20px;
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #1976d2;
+      margin-top: 1.6em;
+    }
+    h1 {
+      background: linear-gradient(90deg,#1976d2,#4caf50);
+      color: #fff;
+      text-align: center;
+      padding: 0.7em 0;
+      margin-bottom: 0.6em;
+      border-radius: 18px 18px 0 0;
+      letter-spacing: 2px;
+      box-shadow: 0 2px 8px #888;
+      font-size: 2.2em;
+    }
+    h2 {
+      background: #fffde7;
+      border-left: 8px solid #FFD700;
+      padding: 0.4em 1em;
+      margin-top: 2em;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px #eee;
+      font-weight: 600;
+      font-size: 2em;
+      border-radius: 10px;
+    }
+    h3 {
+      color: #1976d2;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin-top: 1.2em;
+      font-size: 1.3em;
+    }
+    hr {
+      margin: 2.5em 0 2em 0;
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg,#ffd700,#1976d2 80%);
+      border-radius: 10px;
+    }
+    blockquote {
+      background: #f6f8fa;
+      border-left: 6px solid #ffb84d;
+      padding: 1.1em 2em;
+      box-shadow:0 1px 5px #eed97a69;
+      border-radius: 10px;
+      margin: 2em 0 2em 0;
+      font-size: 1.1em;
+    }
     .note-red { color: #cd1818; font-weight: bold; }
-    code { background: #f9f2f4; padding: 2px 6px; border-radius: 3px; }
+    .note-warning {
+      background: #fff9c4;
+      border-left: 6px solid #ffd600;
+      padding: 12px 18px;
+      margin: 16px 0;
+      box-shadow: 0 1px 6px #eee;
+      font-weight: bold;
+      font-size: 1.08em;
+      border-radius: 9px;
+    }
+    .note-danger {
+      background: #ffeaea;
+      border-left: 6px solid #d32f2f;
+      color: #b71c1c;
+      padding: 12px 18px;
+      margin: 18px 0;
+      font-weight: bold;
+      border-radius: 9px;
+    }
+    .schedule-table th {
+      background: #1976d2;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1em;
+    }
+    .schedule-table tr:nth-child(even) {background: #f2faff;}
+    .schedule-table {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px #ccc;
+      overflow: hidden;
+      width: 100%;
+      margin-bottom: 2em;
+      margin-top: 0.5em;
+      border: 1px solid #eee;
+      text-align: center;
+      border-collapse: separate;
+    }
+    .schedule-table th, .schedule-table td {
+      padding: 12px 8px;
+      min-width: 110px;
+    }
+    ol, ul {
+      margin-left: 1.4em;
+      margin-bottom: 1.1em;
+    }
+    ol ul {
+      margin-top: 0.6em;
+      margin-bottom: 0.7em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    a, a:visited {
+      color: #1976d2;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      transition: color 0.18s, background 0.18s;
+      border-radius: 5px;
+      padding: 2px 5px;
+    }
+    a:hover {
+      color: #FFD700;
+      background: #1976d2;
+    }
+    code {
+      background: #f9f2f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+    .image-banner {
+      text-align: center;
+      margin: 1.5em 0 1.5em 0;
+      width: 100%;
+    }
+    .image-banner img {
+      max-width: 100%;
+      border-radius: 17px;
+      box-shadow: 0 2px 18px #9fcca6;
+    }
+    @media (max-width: 600px) {
+      body {
+        max-width: 97vw;
+        padding: 2vw 2vw;
+        font-size: 0.96em;
+      }
+      .schedule-table th, .schedule-table td { min-width: 60px; font-size: 0.9em;}
+      h1 {font-size: 1.2em;}
+      h2 {font-size: 1.1em;}
+      .image-banner img{border-radius:10px;}
+    }
   </style>
 </head>
 <body>
+<h1>🏏 The Champions League 2025 Rulebook 🏏</h1>
 
-<h1>The Champions League 2025 Rulebook</h1>
+<div class="image-banner">
+  <img src="images/TCL.jpeg" alt="Champions League Banner">
+</div>
 
-<!-- Red Note -->
 <blockquote>
   <span class="note-red">Note:</span> From this point forward, "The Champions League" will be abbreviated as "TCL".
 </blockquote>
 
-
 <hr>
-
 <h2>Table of Contents</h2>
 <ol>
   <li><a href="#terms-and-conditions">Terms and conditions</a></li>
   <li><a href="#general-rules">General Rules</a></li>
-  <li><a href="#tournament-structure">Tournament Format</a></li>
-  <ul>
+  <li><a href="#tournament-structure">Tournament Format</a>
+    <ul>
       <li><a href="#group-stage">Group Stage</a></li>
       <li><a href="#pre-quarter-finals">Pre-Quarter Finals</a></li>
       <li><a href="#quarter-finals">Quarter Finals</a></li>
@@ -36,6 +191,7 @@
       <li><a href="#third-place-match">Third Place Decider</a></li>
       <li><a href="#finals">The Final</a></li>
     </ul>
+  </li>
   <li><a href="#team-setup">Team Setup/Formation</a></li>
   <li><a href="#timings">Timings</a></li>
   <li><a href="#powerplay">Powerplay and Field Restrictions</a></li>
@@ -44,6 +200,7 @@
   <li><a href="#other-guidelines-or-rules">Other Guidelines Or Rules</a></li>
 </ol>
 <hr>
+
 
 <h2 id="terms-and-conditions" style="font-size: 2.5em;" >A. Terms and Conditions</h2>
 <div style="background: #e3f3ff; border-left: 5px solid #1976d2; padding: 12px 18px; margin: 18px 0; font-weight: bold;">
@@ -643,5 +800,10 @@
     In the event of a dispute, the matter shall be resolved jointly by both umpires. If necessary, the umpires may consult the captains of both teams before making a final decision.
   </li>
 </ol>
+<footer style="margin:2.5em 0 0 0; font-size:0.98em; text-align:center; color:#888; border-top:1px solid #e3e3e3; padding-top:1.2em;">
+  <div>
+    📞 Tournament Contact: <a href="mailto:goutam.nayak1706@gmail.com">goutam.nayak1706@gmail.com</a> &nbsp; | &nbsp; 🏟 Hosted by Kalinga Warriors &copy; 2025
+  </div>
+</footer>
 </body>
 </html>
