@@ -2,9 +2,251 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hello World</title>
+  <title>Champions League Schedule - 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f6f8fa;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 18px;
+      color: #273c75;
+    }
+    .poster {
+      width: 450px;
+      max-width: auto;
+      border-radius: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.11);
+    }
+    .powered-by {
+      margin: 18px 0 100px 0;
+      font-size: 1.05em;
+      color: #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .sponsor-img {
+      height: 100px;
+      width: auto;
+      margin: 0 5px;
+      vertical-align: middle;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      padding: 2px 4px;
+    }
+    .tables-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    .date-box {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 18px 40px;
+    background: linear-gradient(90deg, #b60f70 70%, #4cd137 100%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6em;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(39,60,117,0.07);
+    letter-spacing: 2px;
+    }
+    .pool-box {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 18px 40px;
+    background: linear-gradient(90deg, #b60f70 70%, #4cd137 100%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6em;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(39,60,117,0.07);
+    letter-spacing: 2px;
+    }
+    table {
+      border-collapse: collapse;
+      min-width: 400px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      margin-bottom: 20px;
+    }
+    th, td {
+      padding: 11px 16px;
+      border-bottom: 1px solid #eee;
+    }
+    th {
+      background: #273c75;
+      color: white;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      margin-bottom: 7px;
+      font-size: 1.15em;
+      color: #273c75;
+    }
+    @media (max-width: 768px) {
+      .tables-container {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <h1>The Champions League Schedule - 2025</h1>
+  <!-- Replace the poster image URL with your tournament's poster -->
+  <img src="images/TCL.jpeg" alt="Champions League Poster" class="poster">
+  
+  <div class="powered-by">
+    <span>Powered by</span>
+    <!-- Replace sponsor image URLs with your sponsor logos -->
+    <img src="images/charcoal.jpeg" alt="Charcoal" class="sponsor-img">
+    <!--img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Nike_logo.svg" alt="Sponsor Nike" class="sponsor-img"-->
+    <!--img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Coca-Cola_logo.svg" alt="Sponsor CocaCola" class="sponsor-img"-->
+  </div>
+
+ <!-- Decorative Date Box -->
+  <div class="pool-box">
+    Teams
+  </div>
+
+<div class="tables-container">
+    <table>
+      <caption>Pool A</caption>
+      <tr>
+        <th>Teams</th>
+        </tr>
+      <tr>
+        <td>A1</td>
+      </tr>
+      <tr>
+        <td>A2</td>
+      </tr>
+      <tr>
+        <td>A3</td>
+      </tr>
+    </table>
+     <table>
+      <caption>Pool B</caption>
+      <tr>
+        <th>Teams</th>
+        </tr>
+      <tr>
+        <td>B1</td>
+      </tr>
+      <tr>
+        <td>B2</td>
+      </tr>
+      <tr>
+        <td>B3</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+ <!-- Decorative Date Box -->
+  <div class="date-box">
+    5th July (Saturday), 2025
+  </div>
+
+  <div class="tables-container">
+    <table>
+      <caption>Field 1</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+      </tr>
+      <tr>
+        <td>7:30 am - 8:50 am </td>
+        <td>A1 vs A2</td>
+      </tr>
+      <tr>
+        <td>8:50 am - 10:10 am</td>
+        <td>A2 vs A3</td>
+      </tr>
+      <tr>
+        <td>10:10 am - 11:30 am</td>
+        <td>A1 vs A3</td>
+      </tr>
+    </table>
+    <table>
+      <caption>Field 2</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+      </tr>
+      <tr>
+        <td>7:30 am - 8:50 am</td>
+        <td>B1 vs B2</td>
+      </tr>
+      <tr>
+        <td>8:50 am to 10:10 am</td>
+        <td>B2 vs B3</td>
+      </tr>
+      <tr>
+        <td>10:10 am - 11:30 am</td>
+        <td>B3 vs B1</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tables-container">
+    <table>
+      <caption>Field 1</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+      </tr>
+      <tr>
+        <td>7:30 am - 8:50 am </td>
+        <td>A1 vs A2</td>
+      </tr>
+      <tr>
+        <td>8:50 am - 10:10 am</td>
+        <td>A2 vs A3</td>
+      </tr>
+      <tr>
+        <td>10:10 am - 11:30 am</td>
+        <td>A1 vs A3</td>
+      </tr>
+    </table>
+    <table>
+      <caption>Field 2</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+      </tr>
+      <tr>
+        <td>7:30 am - 8:50 am</td>
+        <td>B1 vs B2</td>
+      </tr>
+      <tr>
+        <td>8:50 am to 10:10 am</td>
+        <td>B2 vs B3</td>
+      </tr>
+      <tr>
+        <td>10:10 am - 11:30 am</td>
+        <td>B3 vs B1</td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>
