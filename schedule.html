@@ -114,6 +114,46 @@
     tr:last-child td {
       border-bottom: none;
     }
+    /* Footer section */
+    .footer-container {
+      background: linear-gradient(90deg, #b60f70 70%, #4cd137 100%);
+      color: #fff;
+      font-family: 'Rajdhani', Arial, sans-serif;
+      padding: 24px 5vw 18px 5vw;
+      margin-top: 0px;
+      text-align: center;
+      border-radius: 29px 29px 0 0;
+      box-shadow: 0 -4px 24px #028e6240;
+      font-size: 1.02em;
+    }
+    .footer-creds {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .footer-creds span, .footer-creds a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.2s;
+    }
+    .footer-creds a:hover { color: #131c2e; }
+    .footer-icon {
+      font-size: 1.21em;
+    }
+    .footer-copyright {
+      letter-spacing: 1px;
+      color: #f7ebf7;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 0.97em;
+      margin-top: 10px;
+    }
     caption {
       caption-side: top;
       font-weight: bold;
@@ -127,14 +167,84 @@
     font-size: 2.00em;
     text-shadow: 1px 20px 60px rgba(255, 170, 0, 0.13);
     }
-    @media (max-width: 768px) {
-      .tables-container {
-        flex-direction: column;
-        gap: 0;
-        align-items: center;
-      }
-    }
-  </style>
+    @media print {
+  body, html {
+    background: #fff !important;
+    color: #000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .tables-container {
+    display: block !important;
+    gap: 0 !important;
+    margin-top: 0 !important;
+  }
+  table {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    margin-bottom: 30px !important;
+    font-size: 1em !important;
+    page-break-inside: avoid;
+  }
+  .Group-table, .field-table {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .poster,
+  .sponsor-img {
+    /* If you want to print images, leave as is, else hide */
+    max-width: 300px !important;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+  .powered-by {
+    margin: 10px 0 !important;
+    gap: 4px !important;
+    flex-wrap: wrap !important;
+    font-size: 0.9em !important;
+  }
+  .date-box, .Group-box, .special-match-box {
+    box-shadow: none !important;
+    margin: 10px auto 10px auto !important;
+    font-size: 1.2em !important;
+    width: 95% !important;
+    background: #eee !important;
+    color: #111 !important;
+  }
+  th, td {
+    border: 1px solid #aaa !important;
+    background: #fff !important;
+    color: #111 !important;
+    box-shadow: none !important;
+  }
+  caption, caption.quarters-caption {
+    background: #b60f70 !important;
+    color: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .footer-container {
+    background: #b60f70 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 10px 0 0 0 !important;
+    font-size: 0.95em !important;
+  }
+  a {
+    color: #333 !important;
+    text-decoration: underline !important;
+  }
+  /* Remove box-shadows and border radius everywhere for print clarity */
+  *, *:before, *:after {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+}
+</style>
 </head>
 <body>
   <h1>The Champions League Schedule - 2025</h1>
@@ -542,6 +652,15 @@
       </tr>
     </table>
   </div>
-
+<footer class="footer-container">
+  <div class="footer-creds">
+    <span><i class="bi bi-person-fill footer-icon"></i> <strong>Created by:</strong> Goutam Nayak</span>
+    <span><i class="bi bi-envelope-fill footer-icon"></i> <a href="mailto:akashsingh@email.com">goutam.nayak1706@gmail.com</a></span>
+    <span><i class="bi bi-whatsapp footer-icon" style="color:#27d742"></i> <a href="https://wa.me/+31659580699" target="_blank">+31-659580699</a></span>
+  </div>
+  <div class="footer-copyright">
+    &copy; 2025 Champions Cricket League. All rights reserved.
+  </div>
+</footer>
 </body>
 </html>
