@@ -60,7 +60,7 @@
     box-shadow: 0 2px 12px rgba(39,60,117,0.07);
     letter-spacing: 2px;
     }
-    .pool-box {
+    .Group-box {
     display: block;
     margin: 0 auto 30px auto;
     padding: 18px 40px;
@@ -72,16 +72,38 @@
     box-shadow: 0 2px 12px rgba(39,60,117,0.07);
     letter-spacing: 2px;
     }
+    .special-match-box {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 18px 40px;
+    background: linear-gradient(90deg, #2e0fb6 70%, #4cd137 100%);
+    color: #da1111c5;
+    font-weight: bold;
+    font-size: 1.6em;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(39,60,117,0.07);
+    letter-spacing: 2px;
+    }
     table {
       border-collapse: collapse;
-      min-width: 400px;
-      background: white;
+      background: rgb(255, 255, 255);
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-      margin-bottom: 20px;
+      margin-bottom: 80px;
     }
-    th, td {
+    .Group-table {
+        min-width: 180px;
+        max-width: 250px;
+        width: 33%;
+        }
+
+        .field-table {
+        min-width: 350px;
+        max-width: 700px;
+        width: 45%;
+    }
+            th, td {
       padding: 11px 16px;
       border-bottom: 1px solid #eee;
     }
@@ -98,6 +120,12 @@
       margin-bottom: 7px;
       font-size: 1.15em;
       color: #273c75;
+    }
+    caption.quarters-caption {
+    background: linear-gradient(90deg, #f7971e 60%, #ffd200 100%);
+    color: #212121;
+    font-size: 2.00em;
+    text-shadow: 1px 20px 60px rgba(255, 170, 0, 0.13);
     }
     @media (max-width: 768px) {
       .tables-container {
@@ -122,13 +150,13 @@
   </div>
 
  <!-- Decorative Date Box -->
-  <div class="pool-box">
+  <div class="Group-box">
     Teams
   </div>
 
 <div class="tables-container">
-    <table>
-      <caption>Pool A</caption>
+    <table class="Group-table">
+    <caption>Group A</caption>
       <tr>
         <th>Teams</th>
         </tr>
@@ -142,8 +170,8 @@
         <td>A3</td>
       </tr>
     </table>
-     <table>
-      <caption>Pool B</caption>
+     <table class="Group-table">
+      <caption>Group B</caption>
       <tr>
         <th>Teams</th>
         </tr>
@@ -157,96 +185,363 @@
         <td>B3</td>
       </tr>
     </table>
+    <table class="Group-table">
+      <caption>Group C</caption>
+      <tr>
+        <th>Teams</th>
+        </tr>
+      <tr>
+        <td>C1</td>
+      </tr>
+      <tr>
+        <td>C2</td>
+      </tr>
+      <tr>
+        <td>C3</td>
+      </tr>
+    </table>
   </div>
 
-
-
-
+<div class="tables-container">
+    <table class="Group-table">
+    <caption>Group D </caption>
+      <tr>
+        <th>Teams</th>
+        </tr>
+      <tr>
+        <td>D1</td>
+      </tr>
+      <tr>
+        <td>D2</td>
+      </tr>
+      <tr>
+        <td>D3</td>
+      </tr>
+    </table>
+     <table class="Group-table">
+      <caption>Group E</caption>
+      <tr>
+        <th>Teams</th>
+        </tr>
+      <tr>
+        <td>E1</td>
+      </tr>
+      <tr>
+        <td>E2</td>
+      </tr>
+      <tr>
+        <td>E3</td>
+      </tr>
+    </table>
+    <table class="Group-table">
+      <caption>Group F</caption>
+      <tr>
+        <th>Teams</th>
+        </tr>
+      <tr>
+        <td>F1</td>
+      </tr>
+      <tr>
+        <td>F2</td>
+      </tr>
+      <tr>
+        <td>F3</td>
+      </tr>
+    </table>
+  </div>
  <!-- Decorative Date Box -->
   <div class="date-box">
     5th July (Saturday), 2025
   </div>
 
   <div class="tables-container">
-    <table>
+    <table class="field-table">
       <caption>Field 1</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
       </tr>
       <tr>
-        <td>7:30 am - 8:50 am </td>
-        <td>A1 vs A2</td>
+        <td>7:30 am - 8:45 am </td>
+        <td>C1 vs C2</td>
       </tr>
       <tr>
-        <td>8:50 am - 10:10 am</td>
-        <td>A2 vs A3</td>
+        <td>8:45 am - 10:00 am</td>
+        <td>C2 vs C3</td>
       </tr>
       <tr>
-        <td>10:10 am - 11:30 am</td>
-        <td>A1 vs A3</td>
+        <td>10:00 am - 11:15 am</td>
+        <td>C1 vs C3</td>
       </tr>
     </table>
-    <table>
+    <table class="field-table">
       <caption>Field 2</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
       </tr>
       <tr>
-        <td>7:30 am - 8:50 am</td>
-        <td>B1 vs B2</td>
+        <td>7:30 am - 8:45 am</td>
+        <td>D1 vs D2</td>
       </tr>
       <tr>
-        <td>8:50 am to 10:10 am</td>
-        <td>B2 vs B3</td>
+        <td>8:45 am - 10:00 am</td>
+        <td>D2 vs D3</td>
       </tr>
       <tr>
-        <td>10:10 am - 11:30 am</td>
-        <td>B3 vs B1</td>
+        <td>10:00 am - 11:15 am</td>
+        <td>D1 vs D3</td>
       </tr>
     </table>
   </div>
 
   <div class="tables-container">
-    <table>
+    <table class="field-table">
       <caption>Field 1</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
       </tr>
       <tr>
-        <td>7:30 am - 8:50 am </td>
+        <td>11:15 am - 12:30 pm </td>
         <td>A1 vs A2</td>
       </tr>
       <tr>
-        <td>8:50 am - 10:10 am</td>
+        <td>12:30 pm - 1:45 pm</td>
         <td>A2 vs A3</td>
       </tr>
       <tr>
-        <td>10:10 am - 11:30 am</td>
+        <td>1:45 pm - 3:00 pm</td>
         <td>A1 vs A3</td>
       </tr>
     </table>
-    <table>
+    <table class="field-table">
       <caption>Field 2</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
       </tr>
       <tr>
-        <td>7:30 am - 8:50 am</td>
+        <td>11:15 am - 12:30 pm </td>
         <td>B1 vs B2</td>
       </tr>
       <tr>
-        <td>8:50 am to 10:10 am</td>
+        <td>12:30 pm - 1:45 pm</td>
         <td>B2 vs B3</td>
       </tr>
       <tr>
-        <td>10:10 am - 11:30 am</td>
-        <td>B3 vs B1</td>
+        <td>1:45 pm - 3:00 pm</td>
+        <td>B1 vs B3</td>
       </tr>
     </table>
   </div>
+
+    <div class="tables-container">
+    <table class="field-table">
+      <caption>Field 1</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+      </tr>
+      <tr>
+        <td>3:00 pm - 4:15 pm</td>
+        <td>E1 vs E2</td>
+      </tr>
+      <tr>
+        <td>4:15 pm - 5:30 pm</td>
+        <td>E2 vs E3</td>
+      </tr>
+      <tr>
+        <td>5:30 pm - 6:45 pm</td>
+        <td>E1 vs E3</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tables-container">
+    <table class="field-table">
+      <caption class="quarters-caption">Pre-Quarter-Final (only one match)</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+        <th>Field</th>
+      </tr>
+      <tr>
+        <td>3:30 pm - 4:45 pm </td>
+        <td>Runners-up <strong>"A"</strong> vs Runners-up <strong>"B"</strong> </td>
+        <td><strong>2</strong> </td>
+      </tr>
+    </table>
+  </div>
+
+
+ <!-- Decorative Date Box -->
+  <div class="date-box">
+    6th July (Sunday), 2025
+  </div>
+
+  <div class="tables-container">
+    <table class="field-table">
+      <caption>Field 1</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+      </tr>
+      <tr>
+        <td>7:30 am - 8:45 am</td>
+        <td>F1 vs F2</td>
+      </tr>
+      <tr>
+        <td>8:45 am - 10:00 am</td>
+        <td>F2 vs F3</td>
+      </tr>
+      <tr>
+        <td>10:00 am - 11:15 am</td>
+        <td>F1 vs F3</td>
+      </tr>
+    </table>
+  </div>
+
+
+   <div class="tables-container">
+    <table class="field-table">
+      <caption class="quarters-caption">Pre-Quarter-Final 1...contd</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+        <th>Field</th>
+      </tr>
+      <tr>
+        <!-- <td>7:30 am - 8:45 am </td>
+        <td>Runners-up <strong>"A"</strong> vs Runners-up <strong>"B"</strong> </td>
+        <td><strong>2</strong> </td> -->
+      </tr>
+      <tr>
+        <td>10:00 am - 11:15 am</td>
+        <td>Runners-up <strong>"B"</strong> vs Runners-up <strong>"C"</strong> </td>
+        <td><strong>2</strong> </td>
+      </tr>
+      <tr>
+        <td>11:15 am - 12:30 pm </td>
+        <td>Runners-up <strong>"A"</strong> vs Runners-up <strong>"C"</strong> </td>
+        <td><strong>1</strong> </td>
+      </tr>
+    </table>
+    <table class="field-table">
+      <caption class="quarters-caption">Pre-Quarter-Final 2</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+        <th>Field</th>
+      </tr>
+      <tr>
+        <td>8:45 am - 10:00 am </td>
+        <td>Runners-up <strong>"D"</strong> vs Runners-up <strong>"E"</strong> </td>
+        <td><strong>2</strong> </td>
+      </tr>
+      <tr>
+        <td>11:15 am - 12:30 pm </td>
+        <td>Runners-up <strong>"D"</strong> vs Runners-up <strong>"F"</strong> </td>
+        <td><strong>2</strong> </td>
+      </tr>
+      <tr>
+        <td>12:30 pm - 1:45 pm</td>
+        <td>Runners-up <strong>"E"</strong> vs Runners-up <strong>"F"</strong> </td>
+        <td><strong>1</strong> </td>
+      </tr>
+    </table>
+  </div>
+
+<div class="tables-container">
+    <table class="field-table">
+      <caption class="quarters-caption">Quarter Finals</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+        <th>Field</th>
+      </tr>
+      <tr>
+        <td>1:45 pm - 3:00 pm</td>
+        <td> B1 vs C1</td>
+        <td> 1 </td>
+      </tr>
+      <tr>
+        <td>1:45 pm - 3:00 pm</td>
+        <td>E1 vs F1</td>
+        <td> 2 </td>
+      </tr>
+      <tr>
+        <td>3:00 pm - 4:15 pm</td>
+        <td>A1 vs PQ-2 Winner</td>
+        <td> 1 </td>
+      </tr>
+      <tr>
+        <td>3:00 pm - 4:15 pm</td>
+        <td>D1 vs PQ-1 Winner</td>
+        <td> 2 </td>
+      </tr>
+    </table>
+  </div>
+
+<div class="tables-container">
+    <table class="field-table">
+      <caption class="quarters-caption">Semi-Finals</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+        <th>Field</th>
+        <th>Type</th>
+      </tr>
+      <tr>
+        <td>4:15 pm - 5:30 pm</td>
+        <td> QF1 Winner vs QF4 Winner</td>
+        <td> 1 </td>
+        <td> SF1 </td>
+      </tr>
+      <tr>
+        <td>4:15 pm - 5:30 pm</td>
+        <td> QF2 Winner vs QF3 Winner</td>
+        <td> 2   </td>
+        <td> SF2 </td>
+      </tr>
+    </table>
+  </div>
+
+<div class="tables-container">
+    <table class="field-table">
+      <caption class="quarters-caption">Third Place</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+        <th>Field</th>
+        <th>Type</th>
+      </tr>
+      <tr>
+        <td>5:30 pm - 6:45 pm</td>
+        <td> SF1 Loser vs SF2 Loser</td>
+        <td> 2 </td>
+        <td> SF1 </td>
+      </tr>
+    </table>
+  </div>
+
+<div class="tables-container">
+    <table class="field-table">
+      <caption class="quarters-caption">Finals</caption>
+      <tr>
+        <th>Time</th>
+        <th>Match</th>
+        <th>Field</th>
+        <th>Type</th>
+      </tr>
+      <tr>
+        <td>5:30 pm - 6:45 pm</td>
+        <td> SF1 Winner vs SF2 Winner</td>
+        <td> 1 </td>
+        <td> SF1 </td>
+      </tr>
+    </table>
+  </div>
+
 </body>
 </html>
