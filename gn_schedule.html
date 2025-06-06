@@ -4,16 +4,55 @@
   <meta charset="UTF-8">
   <title>Champions League Schedule - 2025</title>
   <style>
+      body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(270deg, #273c75, #4cd137, #b60f70, #00a8ff);
+    background-size: 800% 800%;
+    animation: backgroundShift 20s ease infinite;
+    opacity: 0.3; /* subtle, can increase for stronger effect */
+  }
+  
+  /* Fireworks canvas style */
+    #fireworksCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+  @keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
       background: #f6f8fa;
       text-align: center;
+      animation: fadeInBody 1.5s ease-in;
+      
+    }
+    
+    @keyframes fadeInBody {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
     }
     h1 {
       margin-bottom: 18px;
       color: #273c75;
+      text-shadow: 1px 1px 4px rgba(39, 60, 117, 0.3);
     }
+    
     .poster {
       width: 450px;
       max-width: auto;
@@ -84,6 +123,7 @@
     letter-spacing: 2px;
     }
     table {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       border-collapse: collapse;
       background: rgb(255, 255, 255);
       border-radius: 12px;
@@ -102,7 +142,7 @@
         max-width: 700px;
         width: 45%;
     }
-            th, td {
+     th, td {
       padding: 11px 16px;
       border-bottom: 1px solid #eee;
     }
@@ -166,8 +206,20 @@
     font-size: 2.00em;
     text-shadow: 1px 20px 60px rgba(255, 170, 0, 0.13);
     }
+    html {
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+    .field-table {
+      width: 100%;
+    }
+}
     @media print {
-  body, html {
+    body, html {
     background: #fff !important;
     color: #000 !important;
     -webkit-print-color-adjust: exact;
@@ -211,7 +263,9 @@
     width: 95% !important;
     background: #eee !important;
     color: #111 !important;
+    animation: popIn 1s ease forwards;
   }
+
   th, td {
     border: 1px solid #aaa !important;
     background: #fff !important;
@@ -246,10 +300,13 @@
 </style>
 </head>
 <body>
+  <!-- Fireworks canvas -->
+  <canvas id="fireworksCanvas"></canvas>
+  <header>
   <h1>The Champions League Schedule - 2025</h1>
+  </header>
   <!-- Replace the poster image URL with your tournament's poster -->
   <img src="images/TCL.jpeg" alt="Champions League Poster" class="poster">
-  
   <div class="powered-by">
     <span>Powered by</span>
     <!-- Replace sponsor image URLs with your sponsor logos -->
@@ -678,5 +735,67 @@
     &copy; The Champions League - 2025. All rights reserved.
   </div>
 </footer>
+ <script>
+    const canvas = document.getElementById('fireworksCanvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+    const particles = [];
+    const colors = ['#ffffff', '#f1c40f', '#e74c3c', '#00a8ff', '#4cd137', '#b60f70'];
+
+    function random(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    function createFirework(x, y) {
+      const count = 40;
+      for (let i = 0; i < count; i++) {
+        particles.push({
+          x,
+          y,
+          radius: 2,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          angle: Math.random() * 2 * Math.PI,
+          speed: random(2, 5),
+          life: 100,
+          decay: random(0.015, 0.03)
+        });
+      }
+    }
+
+    function animateFireworks() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      particles.forEach((p, index) => {
+        p.x += Math.cos(p.angle) * p.speed;
+        p.y += Math.sin(p.angle) * p.speed;
+        p.life -= p.decay;
+
+        if (p.life <= 0) {
+          particles.splice(index, 1);
+        }
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = p.color;
+        ctx.fill();
+      });
+
+      if (Math.random() < 0.03) {
+        createFirework(random(100, canvas.width - 100), random(100, canvas.height - 100));
+      }
+
+      requestAnimationFrame(animateFireworks);
+    }
+
+    animateFireworks();
+  </script>
+  </script>
 </body>
 </html>
