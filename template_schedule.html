@@ -4,55 +4,16 @@
   <meta charset="UTF-8">
   <title>Champions League Schedule - 2025</title>
   <style>
-      body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient(270deg, #273c75, #4cd137, #b60f70, #00a8ff);
-    background-size: 800% 800%;
-    animation: backgroundShift 20s ease infinite;
-    opacity: 0.3; /* subtle, can increase for stronger effect */
-  }
-  
-  /* Fireworks canvas style */
-    #fireworksCanvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-
-  @keyframes backgroundShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
       background: #f6f8fa;
       text-align: center;
-      animation: fadeInBody 1.5s ease-in;
-      
-    }
-    
-    @keyframes fadeInBody {
-    from { opacity: 0; transform: translateY(50px); }
-    to { opacity: 1; transform: translateY(0); }
     }
     h1 {
       margin-bottom: 18px;
       color: #273c75;
-      text-shadow: 1px 1px 4px rgba(39, 60, 117, 0.3);
     }
-    
     .poster {
       width: 450px;
       max-width: auto;
@@ -122,40 +83,7 @@
     box-shadow: 0 2px 12px rgba(39,60,117,0.07);
     letter-spacing: 2px;
     }
-    .countdown-box {
-    margin: 18px auto 28px auto;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    min-width: unset;         /* Ensure it doesn't default to something too large */
-    padding: 10px 18px;
-    background: linear-gradient(90deg, #273c75 70%, #4cd137 100%);
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(39,60,117,0.14);
-    font-size: 1em;
-    font-weight: 600;
-    letter-spacing: 1px;
-    gap: 0.2em;
-  }
-    .countdown-label {
-      font-size: 0.93em;            /* Smaller label */
-      font-weight: bold;
-      color: #fff;
-      margin-right: 7px;            /* Slightly smaller margin */
-      letter-spacing: 1px;
-      opacity: 1;
-    }
-
-    .countdown-now {
-      font-size: 0.78em;
-      margin-top: 8px;
-      color: #eee;
-      opacity: 0.8;
-    }
     table {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
       border-collapse: collapse;
       background: rgb(255, 255, 255);
       border-radius: 12px;
@@ -174,7 +102,7 @@
         max-width: 700px;
         width: 45%;
     }
-     th, td {
+            th, td {
       padding: 11px 16px;
       border-bottom: 1px solid #eee;
     }
@@ -238,20 +166,8 @@
     font-size: 2.00em;
     text-shadow: 1px 20px 60px rgba(255, 170, 0, 0.13);
     }
-    html {
-    font-size: 16px;
-  }
-
-  @media (max-width: 768px) {
-    html {
-      font-size: 14px;
-    }
-    .field-table {
-      width: 100%;
-    }
-}
     @media print {
-    body, html {
+  body, html {
     background: #fff !important;
     color: #000 !important;
     -webkit-print-color-adjust: exact;
@@ -261,9 +177,6 @@
     display: block !important;
     gap: 0 !important;
     margin-top: 0 !important;
-  }
-  .no-print, .no-print * {
-    display: none !important;
   }
   table {
     width: 100% !important;
@@ -278,37 +191,18 @@
     max-width: 100% !important;
     width: 100% !important;
   }
-  .poster {
-    max-width: 200px !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto 10px auto !important;
-    box-shadow: none !important;
-    border-radius: 18px !important;
-    page-break-inside: avoid !important;
-  }
-
+  .poster,
   .sponsor-img {
-    width: 60px !important;
-    height: 60px !important;
-    object-fit: cover !important;
-    border-radius: 50% !important;
-    box-shadow: none !important;
-    margin: 0 6px !important;
-    padding: 0 !important;
-    vertical-align: middle !important;
-    page-break-inside: avoid !important;
+    /* If you want to print images, leave as is, else hide */
+    max-width: 300px !important;
+    height: auto !important;
+    page-break-inside: avoid;
   }
   .powered-by {
     margin: 10px 0 !important;
     gap: 4px !important;
     flex-wrap: wrap !important;
     font-size: 0.9em !important;
-  }
-  .powered-by-label {
-    font-weight: bold;
-    color: #c10d0d; /* or #222 or your darkest brand color */
-    margin-right: 10px;
   }
   .date-box, .Group-box, .special-match-box {
     box-shadow: none !important;
@@ -317,9 +211,7 @@
     width: 95% !important;
     background: #eee !important;
     color: #111 !important;
-    animation: popIn 1s ease forwards;
   }
-
   th, td {
     border: 1px solid #aaa !important;
     background: #fff !important;
@@ -354,19 +246,12 @@
 </style>
 </head>
 <body>
-  <!-- Fireworks canvas -->
-  <canvas id="fireworksCanvas"></canvas>
-  <div class="Group-box">
-    The Champions League Schedule - 2025
-  </div>
+  <h1>The Champions League Schedule - 2025</h1>
   <!-- Replace the poster image URL with your tournament's poster -->
   <img src="images/TCL.jpeg" alt="Champions League Poster" class="poster">
-  <div id="countdownBox" class="countdown-box no-print" aria-live="polite">
-    <span id="countdownLabel" class="countdown-label"><b>Starts in: </b></span>
-    <span id="countdown"></span>
-  </div>
+  
   <div class="powered-by">
-    <span class="powered-by-label"><b>Powered by:</b></span>
+    <span>Powered by</span>
     <!-- Replace sponsor image URLs with your sponsor logos -->
     <img src="images/charcoal.jpeg" alt="Charcoal" class="sponsor-img">
     <img src="images/parallel_logo.svg" alt="Think_Goodies"class="sponsor-img"></iframe>
@@ -385,13 +270,13 @@
         <th>Teams</th>
         </tr>
       <tr>
-        <td>Strikers</td>
+        <td>A1</td>
       </tr>
       <tr>
-        <td>Smashers XI</td>
+        <td>A2</td>
       </tr>
       <tr>
-        <td>Den Haag Slayers</td>
+        <td>A3</td>
       </tr>
     </table>
      <table class="Group-table">
@@ -400,13 +285,13 @@
         <th>Teams</th>
         </tr>
       <tr>
-        <td>Super Smashers</td>
+        <td>B1</td>
       </tr>
       <tr>
-        <td>Flevo Warriors</td>
+        <td>B2</td>
       </tr>
       <tr>
-        <td>Kalinga Warriors</td>
+        <td>B3</td>
       </tr>
     </table>
     <table class="Group-table">
@@ -415,13 +300,13 @@
         <th>Teams</th>
         </tr>
       <tr>
-        <td>Powerhitters</td>
+        <td>C1</td>
       </tr>
       <tr>
-        <td>Desi Warriors</td>
+        <td>C2</td>
       </tr>
       <tr>
-        <td>Titans XI</td>
+        <td>C3</td>
       </tr>
     </table>
   </div>
@@ -433,13 +318,13 @@
         <th>Teams</th>
         </tr>
       <tr>
-        <td>Maratha Challengers</td>
+        <td>D1</td>
       </tr>
       <tr>
-        <td>Minnal Cricket Club</td>
+        <td>D2</td>
       </tr>
       <tr>
-        <td>Romeo XI</td>
+        <td>D3</td>
       </tr>
     </table>
      <table class="Group-table">
@@ -448,13 +333,13 @@
         <th>Teams</th>
         </tr>
       <tr>
-        <td>Team Hoysala</td>
+        <td>E1</td>
       </tr>
       <tr>
-        <td>Kalinga Fighters</td>
+        <td>E2</td>
       </tr>
       <tr>
-        <td>Jaatsdway!</td>
+        <td>E3</td>
       </tr>
     </table>
     <table class="Group-table">
@@ -463,13 +348,13 @@
         <th>Teams</th>
         </tr>
       <tr>
-        <td>Utrecht Super XI</td>
+        <td>F1</td>
       </tr>
       <tr>
-        <td>Utrecht Challengers</td>
+        <td>F2</td>
       </tr>
       <tr>
-        <td>Dutch Lords</td>
+        <td>F3</td>
       </tr>
     </table>
   </div>
@@ -480,124 +365,104 @@
 
   <div class="tables-container">
     <table class="field-table">
-      <caption>Group C</caption>
+      <caption>Field 1</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
       </tr>
       <tr>
         <td>7:30 am - 8:45 am </td>
-        <td>Powerhitters vs Desi Warriors</td>
-        <td>1</td>
+        <td>C1 vs C2</td>
       </tr>
       <tr>
         <td>8:45 am - 10:00 am</td>
-        <td>Desi Warriors vs Titans XI</td>
-        <td>1</td>
+        <td>C2 vs C3</td>
       </tr>
       <tr>
         <td>10:00 am - 11:15 am</td>
-        <td>Powerhitters vs Titans XI</td>
-        <td>1</td>
+        <td>C1 vs C3</td>
       </tr>
     </table>
     <table class="field-table">
-      <caption>Group D</caption>
+      <caption>Field 2</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
       </tr>
       <tr>
         <td>7:30 am - 8:45 am</td>
-        <td>Maratha Challengers vs Minnal Cricket Club</td>
-        <td>2</td>
+        <td>D1 vs D2</td>
       </tr>
       <tr>
         <td>8:45 am - 10:00 am</td>
-        <td>Minnal Cricket Club vs Romeo XI</td>
-        <td>2</td>
+        <td>D2 vs D3</td>
       </tr>
       <tr>
         <td>10:00 am - 11:15 am</td>
-        <td>Maratha Challengers vs Romeo XI</td>
-        <td>2</td>
+        <td>D1 vs D3</td>
       </tr>
     </table>
   </div>
 
   <div class="tables-container">
     <table class="field-table">
-      <caption>Group A</caption>
+      <caption>Field 1</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
       </tr>
       <tr>
         <td>11:15 am - 12:30 pm </td>
-        <td>Strikers vs Smashers XI</td>
-         <td>1</td>
+        <td>A1 vs A2</td>
       </tr>
       <tr>
         <td>12:30 pm - 1:45 pm</td>
-        <td>Smashers XI vs Den Haag Slayers</td>
-         <td>1</td>
+        <td>A2 vs A3</td>
       </tr>
       <tr>
         <td>1:45 pm - 3:00 pm</td>
-        <td>Strikers vs Den Haag Slayers</td>
-         <td>1</td>
+        <td>A1 vs A3</td>
       </tr>
     </table>
     <table class="field-table">
-      <caption>Group B</caption>
+      <caption>Field 2</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
       </tr>
       <tr>
         <td>11:15 am - 12:30 pm </td>
-        <td>Super Smashers vs Flevo Warriors</td>
-        <td>2</td>
+        <td>B1 vs B2</td>
       </tr>
       <tr>
         <td>12:30 pm - 1:45 pm</td>
-        <td>Flevo Warriors vs Kalinga Warriors</td>
-        <td>2</td>
+        <td>B2 vs B3</td>
       </tr>
       <tr>
         <td>1:45 pm - 3:00 pm</td>
-        <td>Super Smashers vs Kalinga Warriors</td>
-        <td>2</td>
+        <td>B1 vs B3</td>
       </tr>
     </table>
   </div>
 
     <div class="tables-container">
     <table class="field-table">
-      <caption>Group E</caption>
+      <caption>Field 1</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
       </tr>
       <tr>
         <td>3:00 pm - 4:15 pm</td>
-        <td>Team Hoysala vs Kalinga Fighters</td>
-        <td>1</td>
+        <td>E1 vs E2</td>
       </tr>
       <tr>
         <td>4:15 pm - 5:30 pm</td>
-        <td>Kalinga Fighters vs Jaatsdway!</td>
-        <td>1</td>
+        <td>E2 vs E3</td>
       </tr>
       <tr>
         <td>5:30 pm - 6:45 pm</td>
-        <td>Team Hoysala vs Jaatsdway!</td>
-        <td>1</td>
+        <td>E1 vs E3</td>
       </tr>
     </table>
   </div>
@@ -608,7 +473,7 @@
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
+        <th>Field</th>
       </tr>
       <tr>
         <td>3:30 pm - 4:45 pm </td>
@@ -626,26 +491,22 @@
 
   <div class="tables-container">
     <table class="field-table">
-      <caption>Group F</caption>
+      <caption>Field 1</caption>
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
       </tr>
       <tr>
         <td>7:30 am - 8:45 am</td>
-        <td>Utrecht Super XI vs Utrecht Challengers</td>
-        <td>1</td>
+        <td>F1 vs F2</td>
       </tr>
       <tr>
         <td>8:45 am - 10:00 am</td>
-        <td>Utrecht Challengers vs Dutch Lords</td>
-        <td>1</td>
+        <td>F2 vs F3</td>
       </tr>
       <tr>
         <td>10:00 am - 11:15 am</td>
-        <td>Utrecht Super XI vs Dutch Lords</td>
-        <td>1</td>
+        <td>F1 vs F3</td>
       </tr>
     </table>
   </div>
@@ -657,7 +518,7 @@
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
+        <th>Field</th>
       </tr>
       <tr>
         <!-- <td>7:30 am - 8:45 am </td>
@@ -706,26 +567,26 @@
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
+        <th>Field</th>
       </tr>
       <tr>
         <td>1:45 pm - 3:00 pm</td>
-        <td> Group "B" Topper vs Group "C" Topper</td>
+        <td> B1 vs C1</td>
         <td> 1 </td>
       </tr>
       <tr>
         <td>1:45 pm - 3:00 pm</td>
-        <td>Group "E" Topper vs Group "F" Topper</td>
+        <td>E1 vs F1</td>
         <td> 2 </td>
       </tr>
       <tr>
         <td>3:00 pm - 4:15 pm</td>
-        <td>Group "A" Topper vs PQ-2 Winner</td>
+        <td>A1 vs PQ-2 Winner</td>
         <td> 1 </td>
       </tr>
       <tr>
         <td>3:00 pm - 4:15 pm</td>
-        <td>Group "D" Topper vs PQ-1 Winner</td>
+        <td>D1 vs PQ-1 Winner</td>
         <td> 2 </td>
       </tr>
     </table>
@@ -737,17 +598,20 @@
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
+        <th>Field</th>
+        <th>Type</th>
       </tr>
       <tr>
         <td>4:15 pm - 5:30 pm</td>
         <td> QF1 Winner vs QF4 Winner</td>
         <td> 1 </td>
+        <td> SF1 </td>
       </tr>
       <tr>
         <td>4:15 pm - 5:30 pm</td>
         <td> QF2 Winner vs QF3 Winner</td>
         <td> 2   </td>
+        <td> SF2 </td>
       </tr>
     </table>
   </div>
@@ -758,12 +622,14 @@
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
+        <th>Field</th>
+        <th>Type</th>
       </tr>
       <tr>
         <td>5:30 pm - 6:45 pm</td>
-        <td> Semi-Final1 Loser vs Semi-Final2 Loser</td>
+        <td> SF1 Loser vs SF2 Loser</td>
         <td> 2 </td>
+        <td> SF1 </td>
       </tr>
     </table>
   </div>
@@ -774,12 +640,14 @@
       <tr>
         <th>Time</th>
         <th>Match</th>
-        <th>Ground #</th>
+        <th>Field</th>
+        <th>Type</th>
       </tr>
       <tr>
-        <td>6:00 pm - 7:15 pm</td>
-        <td> Semi-Final1 Winner vs Semi-Final2 Winner</td>
+        <td>5:30 pm - 6:45 pm</td>
+        <td> SF1 Winner vs SF2 Winner</td>
         <td> 1 </td>
+        <td> SF1 </td>
       </tr>
     </table>
   </div>
@@ -793,93 +661,5 @@
     &copy; The Champions League - 2025. All rights reserved.
   </div>
 </footer>
- <script>
-    const canvas = document.getElementById('fireworksCanvas');
-    const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    window.addEventListener('resize', () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    });
-
-    const particles = [];
-    const colors = ['#ffffff', '#f1c40f', '#e74c3c', '#00a8ff', '#4cd137', '#b60f70'];
-
-    function random(min, max) {
-      return Math.random() * (max - min) + min;
-    }
-
-    function createFirework(x, y) {
-      const count = 40;
-      for (let i = 0; i < count; i++) {
-        particles.push({
-          x,
-          y,
-          radius: 2,
-          color: colors[Math.floor(Math.random() * colors.length)],
-          angle: Math.random() * 2 * Math.PI,
-          speed: random(2, 5),
-          life: 100,
-          decay: random(0.015, 0.03)
-        });
-      }
-    }
-
-    function animateFireworks() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      particles.forEach((p, index) => {
-        p.x += Math.cos(p.angle) * p.speed;
-        p.y += Math.sin(p.angle) * p.speed;
-        p.life -= p.decay;
-
-        if (p.life <= 0) {
-          particles.splice(index, 1);
-        }
-
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = p.color;
-        ctx.fill();
-      });
-
-      if (Math.random() < 0.03) {
-        createFirework(random(100, canvas.width - 100), random(100, canvas.height - 100));
-      }
-
-      requestAnimationFrame(animateFireworks);
-    }
-
-    animateFireworks();
-  </script>
-  <script>
-function updateCountdown() {
-  // Target date: July 5, 2025 at 7:30am local time
-  const targetDate = new Date(2025, 6, 5, 7, 30, 0); // Month is 0-based (6=July)
-  const now = new Date();
-  const diff = targetDate - now;
-  const countdown = document.getElementById("countdown");
-  let output = '';
-  if (diff <= 0) {
-    output = "<span style='color:#ffc600;'>It's started!</span>";
-  } else {
-    const days = Math.floor(diff / 1000 / 60 / 60 / 24);
-    const hours = Math.floor((diff / 1000 / 60 / 60) % 24);
-    const mins = Math.floor((diff / 1000 / 60) % 60);
-    const secs = Math.floor((diff / 1000) % 60);
-    output =
-      `<span style="color:#fb5d1d;">${days}</span> days  ` +
-      `<span style="color:#9dffcb;">${hours}</span> hrs  ` +
-      `<span style="color:#a0d9f7;">${mins}</span> mins  ` +
-      `<span style="color:#ffe6a0;">${secs}</span> secs`;
-  }
-  countdown.innerHTML = output;
-}
-// Initial call and then every second
-updateCountdown();
-setInterval(updateCountdown, 1000);
-</script>
 </body>
 </html>
